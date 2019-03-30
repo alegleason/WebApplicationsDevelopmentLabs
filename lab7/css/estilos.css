@@ -1,0 +1,43 @@
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+img{
+  float: left;
+}
+
+body{
+    background-image: url('../img/bg.png');
+    font-family: "Courier New", Courier, monospace;
+}
+
+header, footer{
+    text-align: center !important;
+    background-color: #ffdbea;
+    color: #606060;
+    font-size: 2em;
+}
+
+div{
+  text-align: justify;
+}
+
+form { 
+  margin: 0 auto; 
+  width:500px;
+}
+
+p{
+  font-size: 18pt;
+}
+
+h3{
+  text-align: center;
+}
+
+#material{
+  background-color:#C5E2F6;
+}

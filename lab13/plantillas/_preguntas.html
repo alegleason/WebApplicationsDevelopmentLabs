@@ -1,0 +1,28 @@
+<div class="container">
+	<div class="row">
+		<div class="col l12">
+			<section id="preguntas">
+				<h3 class="center">Laboratorio 13</h3>
+				<h4 class="center">Preguntas</h4>         
+				<article>
+					<h5>¿Por qué es importante hacer un session_unset() y luego un session_destroy()?</h5>
+					<p>session_unset() - Libera todas las variables de la sesión, es decir, libera todas las variablas de sesión que están almacenadas actualmente.</p>
+					<p>session_destroy() — Destruye toda la información asociada con una sesión actual, más no hace el unset de las variables globales asociadas con la sesión, ni tampoco hace el unset de las cookies de la sesión, de ahí la importancia de usar ambas funciones.</p>
+					<h5>¿Cuál es la diferencia entre una variable de sesión y una cookie?</h5>
+					<p>Una cookie es un bit de información guardada por el navegador y enviada al servidor con cada request.</p>
+					<p>Una variable de sesión es parte de una colección de información guardada en el servidor, asociada con cierto usuario. A diferencia de una cookie, la información no se guarda en la computadora del usuario.</p>
+					<h5>¿Qué técnicas se utilizan en sitios como facebook para que el usuario no sobreescriba sus fotos en el sistema de archivos cuando sube una foto con el mismo nombre?</h5>
+					<p>Un método bastante útil es asociar el ID del usuario con un número random (utilizando alguna función como uniqid() de PHP), para luego revisar que no se haya repetido, aún siendo random. Se pueden utilizar tablas hash.</p>
+					<h5><strong>¿Qué es CSRF y cómo puede prevenirse?</h5>
+					<p>Cross-Site Request Forgery (CSRF) es un tipo de ataque que forza a un usuario a ejecutar acciones no deseadas on una aplicación web donde están logeados. Los ataques de este tipo apuntan a cambiar el estado de las requests, más no a robar información, ya que el eatacante no puede ver la respuesta al request forzado.</p>
+					<p>Algunas maneras de prevención son las siguientes: 
+						<ol>
+							<li>Usar el método POST y no GET. </li>
+							<li>Double Submitted Cookie, que es generar un valor aletorio cuando un usuario visita un sitio, y pedir ese valor en cada submission o post request.</li>
+							<li>Hacer un token con cada forma.</li>
+						</ol>
+					</p>
+				</article>
+			</section>
+		</div>
+	</div>

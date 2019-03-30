@@ -1,0 +1,26 @@
+<br>
+<!-- HTML form-->
+<section id = "ejercicios">
+	<div class="row">
+	<h5> Iniciaste sesión correctamente, introduce tu imagen </h5>
+	<form class="col s12 m8 l6" method="POST" action="upload.php" id="formaImagen" enctype="multipart/form-data">
+		<div class="file-field input-field">
+			<div class="btn">
+				<span>File</span>
+				<input type="file" name="fileToUpload" id="fileToUpload"  accept="image/x-png,image/jpeg">
+			</div>
+			<div class="file-path-wrapper">
+				<input class="file-path validate" type="text">
+			</div>
+		</div>
+		<button value="Upload Image" class="btn waves-effect waves-light" type="submit" name="action">Upload
+    	<i class="material-icons right">send</i>
+  		</button>
+	</form>
+
+	<?php if (isset($_SESSION["imagen"])): ?>
+		<img src="<?=$_SESSION["imagen"]?>" alt="Imagen del Usuario">
+	<?php endif ?>
+</div>
+</section>
+<br>

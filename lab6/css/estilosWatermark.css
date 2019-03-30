@@ -1,0 +1,43 @@
+body{
+    background-image: url('../img/bg.png');
+    font-family: "Courier New", Courier, monospace;
+}
+
+header, footer{
+    text-align: center !important;
+    background-color: #ffdbea;
+    color: #606060;
+    font-size: 1.5vw;
+}
+
+.nav>li>a:focus,.nav>li>a:hover{
+  text-decoration:none;
+  background-color:#C5E2F6;
+}
+
+div.a{
+  position: relative;
+  top: 5em;
+  padding-right: 10em;
+  padding-left: 10em;
+}
+
+p{
+  font-size: 1.5vw;
+}
+
+body:after{
+  content: "Marca de agua"; 
+  font-size: 10vw;
+  opacity: .2;
+  color: red;
+  z-index: -1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}

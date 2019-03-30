@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+
+  <meta charset="UTF-8" >
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/estilos.min.css" rel="stylesheet">
+  <title>Laboratorio 3</title>
+</head>
+
+<body>
+ <header>
+  <h1> Alejandro Gleason Méndez </h1>
+  <h4>A01703013 | alejandrogleasonm@gmail.com </h4>
+  <div class="container">
+    <ul class="nav justify-content-center row">
+      <li class="nav-item col-md-6"><a class="nav-link" href="https://bitbucket.org/alegleason/daw_labs_a01703013/src">Mi repositorio en Bitbucket </a></li>
+      <li class="nav-item col-md-6"><a class="nav-link" href="https://ejuarez.bitbucket.io/daw/">Calendario DAW y BD</a></li>
+    </ul>
+  </div>
+</header>
+
+<br>
+
+<section id="preguntas">
+	<h3><i class="glyphicon glyphicon-th" aria-hidden="true"></i><strong> Preguntas</strong></h3>
+  <div class="container">
+    <ul>
+      <li><strong>Como ingeniero de software ¿cuál es tu recomendación sobre el uso de !important en un CSS? </strong>
+        <br>
+        Antes que nada hay que saber para qué es el !important. Lo que hace este elemento es reemplazar algún estilo que venga por defecto en algún framework para front-end como Bootstrap, UIKit, Materialize u otro, con alguno estilo que tú como ingeniero definas. Mi recomendación es usarlo siempre y cuando sepas exactamente qué es lo que estás haciendo y por qué, y claro, cuando este nuevo elemento vaya a complacer las necesidades del cliente.
+      </li>
+      <li><strong>Si se pone una imagen de fondo en una página HTML, ¿por qué debe escogerse con cuidado?</strong> 
+        <br>
+        Esto es una de las cosas en las que más tiempo invierto (relativamente): elegir imágenes, íconos, tipografía y demás; pero sobre todo, es muy difícil elegir imágenes de fondo. Hay muchos aspectos que hay que cuidar para que el sitio se vea responsivo. Primero debemos elegir una imagen con buen tamaño (o configurarla para que tenga un buen tamaño) y no se vea pixeleada al cubrir todo el background; otra opción es elegir una imagen especial de CSS que permita que se vea continuidad (se ve como una sola imagen de fondo, pero en realidad son varias en cuadricula, ejemplo de esta es la actual); por último probar nuestra imagen en diversos tipos de tamaño de pantalla para comprobar una buena visualización.
+      </li>
+      <li><strong>Como ingeniero de software, ¿cuál es tu recomendación al elegir las unidades de un propiedad de estilo entre %, px y pt?</strong>
+        <br>
+        Las tres son unidades distintas y a fin de cuentas se utilizan para diversos propósitos, yo los clasificaría dela siguiente manera:
+        <ul>
+            <li><strong>Porcentaje (%):</strong> Utilizarlo para definir el tamaño de containers, imágenes, tablas y cualquier bloque dentro de la página ya que son muy fáciles de visualizar mentalmente y son altamente responsivos -al menos en lo que a mí me ha tocado-. El porcentaje te permite divisar el tamaño del bloque que estés manejando con respecto a la página cómodamente. </li>
+            <li><strong>Puntos (pt):</strong> Utilizarlo para definir tamaños de letras principalmente. La diferencia entre este y px es a veces sutil por lo que a veces no hay problema en intercambiar entre uno y otro. Cualquier cosa que tenga relleno puede ser definida con puntos, no espaciados.</li>
+            <li><strong>Pixeles (px):</strong> Utilizarlo para padding (ya que esta medida no se puede definir en pt), para bordes y márgenes. De igual manera es una medida sencilla de estructurar mentalmente, y de jugar con ella. </li>
+          </ul>
+      </li>
+      <li><strong>¿Por qué el uso de una versión minimizada del CSS mejora el rendimiento del sitio?</strong>
+        <br>
+        Básicamente lo que hace la versión minimizada es remover caracteres innecesarios, tales como espacios, tabulaciones o enters propios del CSS. Evidentemente es menos pesada que una versión no minimizada y esto es el factor que va a hacer que su carga sea más rápida. Es bueno usarlo cuando el archivo CSS ya es final o pertenece a algún framework como Boostrap, ya que al abrirlo su entendimiento no se logra tan fácil como en una versión sin minimizar (imagina todo un código en una sola linea sin ningún tipo de espaciado, comparado con otro estructurado regularmente).
+      </li>
+    </ul>
+  </div> 
+</section>
+
+<br>
+
+<!-- Utilizando divs-->
+<article>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <h3><i class="glyphicon glyphicon-user" aria-hidden="true"></i><strong> Sobre mí...</strong></h3>
+        <p>Mi nombre es Alejandro. Me gusta mucho vender, tratar con clientes, ver películas, series y descansar. Entre mis más grandes proyectos tengo mi <a href="https://listado.mercadolibre.com.mx/_CustId_297726795"> tienda en Mercado Libre</a> y mi página de <a href="https://www.instagram.com/sunglassesqro/"> venta de lentes en Instagram </a>. Me encanta pasar tiempo con mi familia y amigos, trabajar y estudiar. ¡Estoy listo para los retos que este semestre traerá y estoy seguro que los afrontaré de la mejor manera posible! </p>
+      </div>
+      <div class="col-md-4">
+        <img src="img/me.jpg" alt="Alejandro Gleason">
+      </div>
+    </div>
+  </div>
+</article>
+
+<br>
+<footer>
+ <p>Sitio escrito utilizando SublimeText</p>
+ <p>Descarga la Herramienta: <a href="https://www.sublimetext.com/download"> SublimeText </a>. </p>
+</footer>
+
+</body>    
+</html>
+

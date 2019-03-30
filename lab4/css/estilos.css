@@ -1,0 +1,59 @@
+body{
+    background-image: url('../img/bg.png');
+    font-family: "Courier New", Courier, monospace;
+}
+
+header, footer{
+    text-align: center;
+    background-color: #ffdbea;
+    color: #606060;
+}
+
+
+h3{
+  text-align: center;
+}
+
+table{
+  border: 5px;
+}
+
+th{
+  padding: 5px;
+}
+
+button{
+  background-color: #BBDEFF;
+}
+
+p{
+  font-size: 9pt;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 35%;
+}
+
+#references{
+  text-align: justify;
+  padding: 12px;
+  background-color: #E2BBFF;
+  font-size: 12pt;
+}
+
+#preguntas{
+  text-align: justify;
+  padding: 10px;
+  background-color: #BEEB9F;
+  font-size: 12pt;
+}
+
+#ejercicios{
+  text-align: justify;
+  padding: 10px;
+  background-color: #FFFF9D;
+  font-size: 12pt;
+}

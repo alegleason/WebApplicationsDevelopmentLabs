@@ -1,0 +1,9 @@
+¿Qué es ODBC y para qué es útil?
+- Es un driver estandarizado para Windows, Linux, Mac OS X y Unix. Es una familia de controladores que proporcionan acceso a una base de datos MySQL utilizando el estándar industrial de Conectividad de Base de Datos Abierta. 
+
+¿Qué es SQL Injection?
+- Técnica que puede destruir tus bases de datos, es uno de los ataques de hacking web más comunes, que consiste en insertar código SQL malicioso, via inputs de la página. 
+- El usuario introduce statements de SQL que correrán en tu base de datos para probablemente robarlos.
+
+¿Qué técnicas puedes utilizar para evitar ataques de SQL Injection?
+- Utilizar parámetros SQL para protección: Estos parámetros son valores agregados a una consulta SQL en tiempo de ejecución, pero de una manera controlada. Estos parámetros pueden ser representados en el statement de SQL con un @ como marcador. El motor SQL revisa los datos recibidos.

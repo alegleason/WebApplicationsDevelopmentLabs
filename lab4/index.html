@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+	<meta charset="UTF-8" >
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/estilos.css" rel="stylesheet">
+	<title>Laboratorio 4</title>
+</head>
+
+<body>
+	<header>
+		<h1> Alejandro Gleason Méndez </h1>
+		<h4>A01703013 | alejandrogleasonm@gmail.com </h4>
+	</header>
+
+	<section id="preguntas">
+		<h3><i class="glyphicon glyphicon-check" aria-hidden="true"></i><strong> Preguntas </strong></h3>
+		<ul>
+			<li> ¿Qué diferencias y semejanzas hay entre Java y JavaScript?
+				<br>
+				Algunas diferencias son los tipos de comandos en ambos lenguajes, que difieren bastante, por ejemplo el Scanner en java y el prompt en JavaScript. JS es un lenguaje interpretado y Java compilado. Una similitud podría ser que Java es un lenguaje orientado a objetos, y JavaScript debe simular muchas de las características de orientación a objetos por medio de prototipos. [1]
+			</li>
+			<li> ¿Qué métodos tiene el objeto Date? (Menciona al menos 5*)
+				getFullYear()
+				<br>
+				getMilliseconds()
+				<br>
+				getDate()
+				<br>
+				getDay()
+				<br>
+				getMinutes()[2]
+			</li>
+			<li> ¿Qué métodos tienen los arreglos? (Menciona al menos 5*)
+				shift()
+				<br>
+				unshift()
+				<br>
+				push()
+				<br>
+				pop()
+				<br>
+				delete[][3]
+			</li>
+			<li> ¿Cómo se declara una variable con alcance local dentro de una función?
+				<br>
+				Se debe declarar dentro de la misma función utilizando 'let'. [4]
+			</li>
+			<li> ¿Qué implicaciones tiene utilizar variables globales dentro de funciones?
+				<br>
+				Que dichas variables pueden ser modificadas antes o después de la ejecución de la función, lo que puede traer ciertos problemas.
+			</li>
+			<li> ¿Qué método de String se puede utilizar para buscar patrones con expresiones regulares? ¿Para qué podrías utilizar esto en una aplicación web?
+				<br>
+				El método RegExp es una expresión regular para describir patrones de caracteres. [5] De acuerdo a lo que nos dijo Rocío Aldeco en Matemáticas Computacionales sería adecuado utilizarlo para autómatas.
+			</li>
+		</ul>
+	</section>
+
+<br>
+
+<section id="ejercicios">
+        <h3><i class="glyphicon glyphicon-flash" aria-hidden="true"></i><strong> Ejercicios </strong></h3>
+        <div class="container">
+        	<div class="row">
+        		<div class="col-md-2">
+        			<button type="button" onclick="ejercicio1()">Ejercicio 1!</button>
+        		</div>
+        		<div class="col-md-2" onclick="ejercicio2()">
+        			<button type="button">Ejercicio 2!</button>
+        		</div>
+        		<div class="col-md-2" onclick="ejercicio3()">
+        			<button type="button">Ejercicio 3!</button>
+        		</div>
+        		<div class="col-md-2" onclick="ejercicio4()">
+        			<button type="button">Ejercicio 4!</button>
+        		</div>
+        		<div class="col-md-2" onclick="ejercicio5()">
+        			<button type="button">Ejercicio 5!</button>
+        		</div>
+        		<div class="col-md-2" onclick="ejercicio6()">
+        			<button type="button">Ejercicio 6!*</button>
+        		</div>
+        	</div>
+        	<br>
+        	<div class="row">
+        		<p>*El ejercicio 6 brinda solución a un problema que me enfrento diariamente. En mi página de ventas realizo continuamente rifas de perfumes de manera gratuita entre los seguidores que crecen diariamente en mi cuenta. En internet hay muchas ruletas pero yo quiero asegurarme que sea realmente al azar, por lo que lo mejor sería programarla yo mismo. La solución es crear dicho mecanismo que nos dé ganadores al azar, y que nos diga qué premio se lleva, previemante se hace una votación de qué perfumes quieren que se rifen para ser ingresados, no hay problema en que los ganadores se lleven el mismo o diferente premio, ya que es al azar la elección del premio también. El número de participantes puede variar, pero siempre hay tres ganadores.</p>
+        	</div>
+        </div>
+</section>
+
+<br>
+
+<section id="references">
+        <h3><i class="glyphicon glyphicon-list" aria-hidden="true"></i><strong> Referencias </strong></h3>
+          <ol>
+            <li>
+              <a target="_blank" href="https://www.campusmvp.es/recursos/post/Java-y-JavaScript-son-lo-mismo.aspx"> Java y JavaScript ¿son lo mismo? </a>
+           </li>
+           <li>
+              <a target="_blank" href="https://www.w3schools.com/js/js_date_methods.asp"> JavaScript Get Date Methods </a>
+           </li>
+           <li>
+              <a target="_blank" href="https://www.w3schools.com/js/js_array_methods.asp"> JavaScript Array Methods </a>
+           </li>
+           <li>
+              <a target="_blank" href="https://www.w3schools.com/js/js_let.asp"> JavaScript Let </a>
+           </li>
+           <li>
+              <a target="_blank" href="https://www.w3schools.com/jsref/jsref_obj_regexp.asp"> JavaScript RegExp Reference </a>
+           </li>
+         </ol>
+</section>
+
+<br>
+
+<footer>
+	<p>Sitio escrito utilizando SublimeText</p>
+	<p>Descarga la Herramienta: <a href="https://www.sublimetext.com/download"> SublimeText </a>. </p>
+</footer>
+
+<script src="js/archivo.js"></script>
+
+</body>    
+</html>
+

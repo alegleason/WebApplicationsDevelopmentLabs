@@ -1,0 +1,7 @@
+¿Por qué es una buena práctica separar el modelo del controlador?
+- Al separar el modelo del controlador podemos reutilizar dicho modelo para diversos objetivos y no solamente uno, en cambio, el controlador en general va enfocado a la base de datos en cuestión y es más enfocado. A demás es bueno tener por separado las funciones del lado de la BD que del servidor.
+
+¿Qué es SQL injection y cómo se puede prevenir?
+- SQL Injection es una técnica que puede destruir tus bases de datos, es uno de los ataques de hacking web más comunes, que consiste en insertar código SQL malicioso, via inputs de la página. 
+- El usuario introduce statements de SQL que correrán en tu base de datos para probablemente robarlos.
+- Para prevenirlo hay que utilizar parámetros SQL para protección: Estos parámetros son valores agregados a una consulta SQL en tiempo de ejecución, pero de una manera controlada. Estos parámetros pueden ser representados en el statement de SQL con un @ como marcador. El motor SQL revisa los datos recibidos. Algunos métodos ya desarrollados nos pueden ayudar, tal como el real_escape_string.

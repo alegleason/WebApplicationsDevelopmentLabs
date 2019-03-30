@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html lang="es" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection"/>
+        <link type="text/css" rel="stylesheet" href="../css/styles.css"  media="screen,projection"/>
+        <title>Lab 17 RBAC</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    
+    <body>
+
+    <nav>
+      <div class="nav-wrapper red darken-3">
+        <a href="../index.php" class="brand-logo"><i class="material-icons">home</i></a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <?php if(isset($_SESSION["usuario"])) { ?>
+                <?php if(allowed('VisualizarCuenta')) { ?>
+                    <li><a href="">Cuenta</a></li>
+                <?php } if(allowed('InformacionPersonal')) { ?>
+                    <li><a href="">Info Personal</a></li>
+                <?php } if(allowed('TransaccionesRealizadas')) { ?>
+                    <li><a href="">Transacciones</a></li>
+                <?php } if(allowed('NuevaTransaccion')) { ?>
+                    <li><a href="">Nueva Transacción</a></li>
+                <?php } if(allowed('VisualizarAreaTrabajo')) { ?>
+                    <li><a href="">Área de Trabajo</a></li>
+                <?php } if(allowed('VisualizarUsuariosRegistrados')) { ?>
+                    <li><a href="">Usuarios Registrados</a></li>
+                <?php } if(allowed('VisualizarPersonalHabilitado')) { ?>
+                    <li><a href="">Personal Habilitado</a></li>
+                <?php } if(allowed('RealizarSubconsultas')) { ?>
+                    <li><a href="">Subconsultas</a></li>
+                <?php } ?>
+				<li><a href="logout.php">Salir</a></li>
+			<?php } else { ?>
+			    <li><a href="inicioSesion.php">Iniciar Sesión</a></li>
+			<?php } ?>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">

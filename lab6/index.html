@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+	<meta charset="UTF-8" >
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/estilos.css" rel="stylesheet">
+	<title>Laboratorio 6</title>
+</head>
+
+<body>
+
+	<header>
+		<h1> Alejandro Gleason Méndez </h1>
+		<h4>A01703013 | alejandrogleasonm@gmail.com </h4>
+		<div class="container">
+			<ul class="nav justify-content-center row">
+				<li class="nav-item col-md-6"><a class="nav-link" href="https://bitbucket.org/alegleason/daw_labs_a01703013/src">Mi repositorio en Bitbucket </a></li>
+				<li class="nav-item col-md-6"><a class="nav-link" href="https://ejuarez.bitbucket.io/daw/">Calendario DAW y BD</a></li>
+			</ul>
+		</div>
+	</header>
+
+	<br>
+
+	<section id="preguntas">
+		<h3><i class="glyphicon glyphicon-check" aria-hidden="true"></i><strong> Preguntas </strong></h3>
+		<li> ¿Cuáles son las diferencias entre los posibles valores de la propiedad position?
+			<br>
+			<ol>
+				<li><strong>Static</strong>: Es el valor por defecto. Los elementos no se ven afectados por las propiedades 'top', 'bottom', 'left' y 'right'. Se posiciona de acuerdo al flujo de la página. </li>
+				<li><strong>Relative</strong>: El elemento es posicionado relativamente a su posición normal. Las propiedades 'top', 'bottom', 'left' y 'right' harán que se ajuste diferente de su posición normal. </li>
+				<li><strong>Fixed</strong>: El elemento está posicionado relativamente a la venta del navegador, lo que significa que se quedará en el mismo lugar aunque nos movamos por la página. Las propiedades 'top', 'bottom', 'left' y 'right' harán que se ajuste a esta posición. </li>
+				<li><strong>Absolute</strong>: El elemento se posiciona en relación con ancestro posicionado más cerca, si no hay ancestro lo hace con el cuerpo del documento y se mueve por la página.</li>
+				<li><strong>Sticky</strong>: El elemento se posiciona en base al movimiento del usuario. Se posiciona relativamente hasta que se mueve, luego se pega al lugar donde queda, tal y como un fixed element. </li>
+			</ol>
+		</li>
+		<li> ¿Cuáles son los valores estándar para la propiedad visibility?
+			<br>
+			<ol>
+				<li><strong>Visible</strong>: Es el valor por defecto. El elemento es visible. </li>
+				<li><strong>Hidden</strong>: El elemento está oculto, pero sigue ocupando espacio. </li>
+				<li><strong>Collapse</strong>: Solo para filas en tablas (tr), grupos de filas (tbody), columnas (col) y grupos de columnas (colgroup). Este valor remueve una fila o columna, pero no afecta el layout de la table, el espacio se pone disponible para otros. <br> Si collapse se usa en otros elementos, se comporta igual que hidden.</li>
+				<li><strong>Initial</strong>: Establece la propieda al valor por defecto (se puede personalizar).</li>
+				<li><strong>Inherit</strong>: Hereda la propiedad de su elemento padre. </li>
+			</ol>
+		</li>
+		<li> ¿Qué es el zIndex y para qué sirve?
+			<br>
+			Es una propiedad que permite especificar las posiciones de diversos elementos con respecto al eje Z, por lo que se pueden sobreponer algunos elementos con respecto a otros; por ejemplo, poner una imágen detrás de texto (al poner 'z-index = -1' en el CSS para img).
+		</li>
+	</section>
+
+	<br>
+
+	<section id="ejercicio1">
+		<h3><i class="glyphicon glyphicon-flash" aria-hidden="true"></i><strong> Ejercicio 1 </strong></h3>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<button onclick="window.open('watermark.html')"> Watermark </button> 
+				</div>
+
+				<div class="col-md-8">
+					Clickea en el botón para ver la marca de agua en otra página, ya que si se coloca en esta no funciona el drag-and-drop.
+				</div>	 
+			</div>
+		</div>
+	</section>
+
+	<br>
+
+	<section id="ejercicio2">
+		<h3><i class="glyphicon glyphicon-flash" aria-hidden="true"></i><strong> Ejercicio 2 </strong></h3>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<button onmouseover="cambiarEstilo()"> Convertir a itálicas </button> 
+					<br><br>
+					*solo tienes que pasar el mouse
+				</div>
+				<div class="col-md-8">
+					<p id="myP">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lectus nisl, finibus eu bibendum at, faucibus vitae diam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ac turpis hendrerit, mattis dolor sed, mollis augue. Maecenas ultrices, quam non sollicitudin vehicula, massa arcu facilisis enim, eu interdum lorem turpis eget massa. Duis consectetur pulvinar efficitur. Donec condimentum sagittis auctor. Vestibulum velit metus, ultricies eu rhoncus non, pretium quis quam. Cras rutrum porta bibendum. Ut lacinia neque libero, vitae tincidunt mauris aliquam a. Mauris a hendrerit nisl. Etiam lacinia posuere risus quis lacinia. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi sodales ipsum id sagittis efficitur. Duis lacinia bibendum mi, et porttitor mauris sagittis vel. Morbi scelerisque lacus sed felis aliquet commodo. Integer pellentesque orci condimentum enim mollis, vel pulvinar arcu tristique.
+					</p>
+				</div>	 
+			</div>
+		</div>
+
+	</section>
+
+	<br>
+
+	<section id="ejercicio3">
+		<h3><i class="glyphicon glyphicon-flash" aria-hidden="true"></i><strong> Ejercicio 3 </strong></h3>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8">	
+					Completa los datos de envío, ningún campo debe de estar vacío:
+					<br><br>
+					<div data-tip="Si tienes dos nombres, favor de ingresar ambos">
+						<input type="text" id="name" value="" placeholder="Nombre">
+					</div>
+					<span id="nameWrong" style="color:red"> </span>
+					<br>
+					<div data-tip="Solo ingresar un apellido">
+						<input type="text" id="lastname" value="" placeholder="Apellido">
+					</div>
+					<span id="lastnameWrong" style="color:red"> </span>
+					<br>
+					<div data-tip="Incluye: Calle, Número, Colonia, CP, Ciudad y Edo.">
+						<input type="text" id="address" value="" placeholder="Dirección">
+					</div>
+					<span id="addressWrong" style="color:red"> </span>
+					<br>
+					<!-- Lo realizado anteriormente (de mostrar datos) se puede hacer tanto con CSS como con Js, se muestran ambas opciones -->
+					Adjunta tu comprobante <input type="file" id="file">
+					<span id="fileWrong" style="color:red"> </span>
+					<br>
+					<!--Correo y teléfono se validan por HTML-->
+					<input type="email" id="email" value="" placeholder="Correo electrónico"> 
+					<span id="emailWrong" style="color:red"> </span>
+					<br>
+					<br>
+					<input type="tel" id="phone" value="" placeholder="Teléfono">
+					<span id="phoneWrong" style="color:red"> </span>
+					<br>
+					<span id=res></span>
+					<br>
+					<button onclick="addDatos()" style="float: left">Submit</button>
+				</div>
+
+				<div class="col-md-4">
+					<br>
+					<button onmouseover="dataFile()">
+						Ayuda con formato de archivo
+					</button>
+					<br>
+					<br>
+					<button onmouseover="dataPhone()">
+						Ayuda con el teléfono
+					</button>
+					<br>
+					<br>
+					<button onmouseover="dataMail()">
+						Ayuda con el correo
+					</button>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<br>
+
+	<section id="ejercicio4">
+		<h3><i class="glyphicon glyphicon-flash" aria-hidden="true"></i><strong> Ejercicio 4 </strong></h3>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<p>Arrastra el logo del Tec al Rectángulo:</p>
+					<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+				</div>
+				<div class="col-md-6">
+					<img id="tec" src="img/logo.png" alt="Logo Tec Mty" draggable="true" ondragstart="drag(event)">
+				</div>
+			</div>
+		</div>
+
+		<br>
+		
+	</section>
+
+	<br>
+
+	<section id="references">
+		<h3><i class="glyphicon glyphicon-list" aria-hidden="true"></i><strong> Referencias </strong></h3>
+		<ol>
+			<li>
+				<a target="_blank" href="https://stackoverflow.com/questions/19480010/adding-a-tooltip-to-an-input-box"> Adding a tooltip to an input box </a>
+			</li>
+			<li>
+				<a target="_blank" href="https://www.w3schools.com/tags/ref_eventattributes.asp"> HTML Event Attributes </a>
+			</li>
+			<li>
+				<a target="_blank" href="https://www.w3schools.com/jsref/prop_style_fontstyle.asp"> Style fontStyle Property </a>
+			</li>
+			<li>
+				<a target="_blank" href="https://www.youtube.com/watch?v=Ro47woidBDg"> Web Page with Printable Watermark or Background Image </a>
+			</li>
+			<li>
+				<a target="_blank" href="https://stackoverflow.com/questions/34082002/html-button-opening-link-in-new-tab"> HTML button opening link in new tab </a>
+			</li>
+			<li>
+				<a target="_blank" href="https://www.w3schools.com/jsref/met_win_settimeout.asp"> Window setTimeout() Method </a>
+			</li>
+		</ol>
+	</section>
+
+	<br>
+	<footer>
+		<p>Sitio escrito utilizando SublimeText</p>
+		<p>Descarga la Herramienta: <a href="https://www.sublimetext.com/download"> SublimeText </a>. </p>
+	</footer>
+
+	<script src="js/archivo.js"></script>
+
+</body>    
+</html>

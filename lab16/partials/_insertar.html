@@ -1,0 +1,30 @@
+<div class="container">
+  <blockquote><h4>Inserta una nueva fruta</h4></blockquote>
+  <form class="row no-margin-bottom" action="fruitController.php" method="POST">
+    <div class="col m8 offset-m2">
+      <div class="row no-margin-bottom">
+        <div class="input-field col s6">
+          <input id="nombre" name="nombre" type="text" class="validate" required>
+          <label for="nombre">Nombre</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="unidades" name="unidades" type="number" class="validate" required>
+          <label for="unidades">Unidades</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="cantidad" name="cantidad" type="number" class="validate" required>
+          <label for="cantidad">Cantidad</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="precio" name="precio" type="number" class="validate" required>
+          <label for="precio">Precio</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="pais" name="pais" type="text" class="validate" required>
+          <label for="pais">Pais</label>
+        </div>
+        <button type="submit" class="waves-effect waves-light btn">Agregar</button>
+      </div>
+    </div>
+  </form>
+</div>

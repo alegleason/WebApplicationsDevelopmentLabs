@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+	<meta charset="UTF-8" >
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/estilos.css" rel="stylesheet">
+	<title>Laboratorio 5</title>
+</head>
+
+<body>
+	
+	<header>
+		<h1> Alejandro Gleason Méndez </h1>
+		<h4>A01703013 | alejandrogleasonm@gmail.com </h4>
+	</header>
+
+	<section id="preguntas">
+		<h3><i class="glyphicon glyphicon-check" aria-hidden="true"></i><strong> Preguntas </strong></h3>
+		<li> ¿Por qué es una buena práctica usar JavaScript para checar que sean válidos los inputs de las formas antes de enviar los datos al servidor?
+			<br>
+			Si tu JavaScript se encarga de validar los datos antes de ser enviados obtendrás dos beneficios principales: Primero te estás asegurando que el usuario haya llenado todos los campos con información válida, por lo que el servidor ya no tiene que validarla. Y en segunda, te aseguras que todos los datos que sean pasados a la base de datos estén con el formato adecuado para evitar correciones posteriormente.
+		</li>
+		<li> ¿Cómo puedes saltarte la seguridad de validaciones hechas con JavaScript?
+			<br>
+			Puedes deshabilitar JavaScript en tu navegador. Todos los navegadores cuentan con la opción de deshabilitar JavaScript.
+		</li>
+		<li> Si te puedes saltar la seguridad de las validaciones de JavaScript, entonces ¿por qué la primera pregunta dice que es una buena práctica?
+			<br>
+			Siempre es buena práctica validar las cosas antes de transferirlas al servidor, a pesar de que este igualmente puede validarlas, si la forma es rechazada antes de ser pasada al servidor, mejorará el tiempo de respuesta.
+
+		</section>
+
+		<br>
+
+		<section id="ejercicio1">
+			<h3><i class="glyphicon glyphicon-flash" aria-hidden="true"></i><strong> Ejercicio 1 </strong></h3>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<p> ¡Crea tu clave para registrarte! Ambas claves deben coincidir. </p>
+					</div>
+					<div class="col-md-6">
+						<form onsubmit="return validarClaves()">
+							<input type="password" id="passwords" value="" placeholder="Clave"> 
+							<span id="messages" style="color:red"> </span>
+							<input type="password" id="passwordss" value="" placeholder="Confirma tu clave"> 
+							<span id="messagess"> </span>
+							<input id="submit" type="submit" value="Submit">
+						</form>
+					</div>
+				</div>         
+			</div>
+		</section>
+
+		<br>
+
+		<section id="ejercicio2">
+			<h3><i class="glyphicon glyphicon-flash" aria-hidden="true"></i><strong> Ejercicio 2 </strong></h3>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">	
+						<header>Sweet Like Candy Red by Ariana Grande 100ml Eau de Parfum $1,200</header>
+						<img src="img/cloud.png" alt="Sweet Like Candy Red" class="center">
+						Cantidad: <select id="slcr">
+							<option value="0">0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+						</select>*
+					</div>
+					<div class="col-md-4">	
+						<header>Frankie by Ariana Grande 100ml Eau de Parfum $1,300</header>
+						<img src="img/moon.png" alt="Frankie" class="center">
+						Cantidad: <select id="frankie">
+							<option value="0">0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+						</select>*
+					</div>
+					<div class="col-md-4">	
+						<header>Sweet Like Candy by Ariana Grande 100ml Eau de Parfum $1,400</header>
+						<img src="img/slc.png" alt="Sweet Like Candy" class="center">
+						Cantidad: <select id="slc">
+							<option value="0">0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+						</select>*
+					</div>
+					* limitado a 5 unidades del mismo artículo por cliente, en la compra de 3 perfumes o más llévate una maleta de Ariana Grande.
+					<br><br>
+					<button onclick="addProductos()">Actualizar carrito</button>
+					<br><br>
+					<span id="total"> </span>
+					<br>
+					<span id="promo"> </span>
+					<br>
+					<button>¡Comprar!</button><!--Este botón no hace nada, sólo es para saber que seguiría este paso-->
+				</div>
+			</div>
+			<br>
+		</section>
+
+		<br>
+
+		<section id="ejercicio3">
+			<h3><i class="glyphicon glyphicon-flash" aria-hidden="true"></i><strong> Ejercicio 3 </strong></h3>
+			<div class="container">
+				<div class="row">
+					Completa los datos de envío, ningún campo debe de estar vacío:
+					<br><br>
+					<input type="text" id="name" value="" placeholder="Nombre">
+					<span id="nameWrong" style="color:red"> </span>
+					<br><br>
+					<input type="text" id="lastname" value="" placeholder="Apellido">
+					<span id="lastnameWrong" style="color:red"> </span>
+					<br><br>
+					<input type="text" id="address" value="" placeholder="Dirección">
+					<span id="addressWrong" style="color:red"> </span>
+					<br><br>
+					Adjunta tu comprobante <input type="file" id="file">
+					<span id="fileWrong" style="color:red"> </span>
+					<br>
+					<!--Correo y teléfono se validan por HTML-->
+					<input type="email" id="email" value="" placeholder="Correo electrónico"> 
+					<span id="emailWrong" style="color:red"> </span>
+					<br><br>
+					<input type="tel" id="phone" value="" placeholder="Teléfono">
+					<span id="phoneWrong" style="color:red"> </span>
+					<br><br>
+					<button onclick="addDatos()">Submit</button>
+					<br>
+					<span id=res></span>					
+				</div>
+			</div>
+		</section>
+
+		<br>
+
+		<footer>
+			<p>Sitio escrito utilizando SublimeText</p>
+			<p>Descarga la Herramienta: <a href="https://www.sublimetext.com/download"> SublimeText </a>. </p>
+		</footer>
+
+		<script src="js/archivo.js"></script>
+
+	</body>    
+	</html>
+

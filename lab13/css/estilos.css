@@ -1,0 +1,41 @@
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+main {    
+  flex: 1 0 auto;
+}
+
+body{
+    background-image: url('../img/bg.png');
+    font-family: "Courier New", Courier, monospace;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+p{
+  font-size: 12pt;
+  text-align: justify;
+}
+
+#preguntas{
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 4em;
+  padding-right: 4em;
+  background-color: #B2DEFF;
+  text-align: justify;
+}
+
+#ejercicios{
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 4em;
+  padding-right: 4em;
+  background-color: #FAFFBD;
+  text-align: justify;
+}

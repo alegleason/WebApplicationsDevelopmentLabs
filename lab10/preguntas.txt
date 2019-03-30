@@ -1,0 +1,18 @@
+/* Laboratorio 10 - A017013013 */
+
+¿Qué muestra la instrucción (sp_help materiales)?
+Regresa un valor de 0 (éxito) y 1 (fallo). La instrucción regresa un resumen de la información de los objetos de todo tipo que existen en la database. Muestra varias tablas con las columnas de la tabla y sus tipos de datos, longitud, valores, entre otras cosas. De igual forma muestra al dueño de la tabla, el tipo de tabla, la fecha de creación de la tabla y el nombre de esta.
+
+Ejecuta las instrucciones que contiene el archivo crear.sql 
+
+¿Qué efecto tuvo esta acción?
+Se crearon las cuatro tablas con todos sus campos correspondientes en una sola corrida.
+
+¿Qué utilidad tiene esta manera de ejecutar los comandos de SQL?
+Puedes ejecutar varias instrucciones sin la necesidad de hacerlo una por una. El proceso se automatiza y es más rápido.
+
+¿Qué relación tienen con las tablas de la base de datos? (checa su contenido)
+El contenido es el mismo, eso quiere decir que se importó correctamente.
+
+¿Qué sucedió?
+Se llenaron las tablas importando los datos masivamente.

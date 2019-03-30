@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+	<meta charset="UTF-8" >
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="css/estilos.css" rel="stylesheet">
+	<link href="css/materialize.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<title>Laboratorio 7</title>
+</head>
+
+<body>
+
+	<header>
+		<nav>
+			<div class="nav-wrapper">
+				<a href="#" class="brand-logo center">Alejandro Gleason</a>
+				<ul id="nav-mobile" class="left hide-on-med-and-down">
+					<li><a href="https://bitbucket.org/alegleason/daw_labs_a01703013/src">Mi repo en Bitbucket</a></li>
+					<li><a href="https://ejuarez.bitbucket.io/daw/">Calendario DAW y BD</a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+	<br>
+
+	<div class="container">
+		<div class="row">
+			<div class="col s12 m4"><!-- Using materialize -->
+				<img src="img/beach.jpg" alt="beach" class="responsive-img materialboxed" data-caption="Beach">
+			</div>
+
+			<div class="col s12 m4">
+				<img src="img/bear.jpeg" alt="bear" class="responsive-img materialboxed" data-caption="Bear">
+			</div>
+
+			<div class="col s12 m4">
+				<img src="img/jungle.jpg" alt="jungle" class="responsive-img materialboxed" data-caption="Jungle">
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col s12 m4"><!-- Using materialize -->
+				<img src="img/boat.jpg" alt="boat" class="responsive-img materialboxed" data-caption="Boat">
+			</div>
+
+			<div class="col s12 m4">
+				<img src="img/bug.jpg" alt="bug" class="responsive-img materialboxed" data-caption="Bug">
+			</div>
+
+			<div class="col s12 m4">
+				<img src="img/japan.jpg" alt="japan" class="responsive-img materialboxed" data-caption="Japan">
+			</div>
+		</div>
+	</div>
+
+	<section id="material">
+		<h3><i class="glyphicon glyphicon-flash" aria-hidden="true"></i><strong> Material Design </strong></h3>
+		<div class="container">
+			<div class="row">
+				<p>
+					Material design es una normativa de diseño enfocado en la visualización del sistema operativo Android, además en la web y en cualquier plataforma. Este lenguaje fue creado por Google.
+					Diseñador Matías Duarte explicó que, "a diferencia del papel verdadero, nuestro material digital puede ampliar y reformar de forma inteligente. El material tiene superficies físicas y bordes. Las texturas y las sombras que tengan sentido de lo que se puede tocar." Google afirma que su nuevo lenguaje de diseño se basa en papel y tinta. 
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<br>
+
+	<footer class="page-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <p class="grey-text text-lighten-4">Sitio escrito utilizando SublimeText</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="https://www.sublimetext.com/download">Descarga Sublime Text</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2019 Copyright Text
+            </div>
+          </div>
+        </footer>
+
+
+	<script src="js/materialize.min.js"></script>
+
+	<script>
+		const gallery = document.querySelectorAll('.materialboxed');//Selecting every image on that class
+		M.Materialbox.init(gallery,{});
+	</script>
+
+</body>    
+</html>
