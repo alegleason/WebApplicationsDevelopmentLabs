@@ -1,0 +1,53 @@
+body{
+    background-image: url('../img/bg.png');
+    font-family: "Courier New", Courier, monospace;
+}
+
+header, footer{
+    text-align: center;
+    background-color: #ffdbea;
+    color: #606060;
+}
+
+article{
+  padding: 10px;
+  background-color: #FFCC5A;
+  text-align: justify;
+}
+
+h3{
+  text-align: center;
+}
+
+form{
+  text-align: center;
+  padding: 6px;
+  background-color: #BEEB9F;
+  font-size: 12pt;
+}
+
+.nav>li>a:focus, .nav>li>a:hover {
+    text-decoration: none;
+    background-color: #C5E2F6;
+}
+
+#conceptos{
+  text-align: justify;
+  padding: 10px;
+  background-color: #BEEB9F;
+  font-size: 12pt;
+}
+
+#preguntas{
+  text-align: justify;
+  padding: 10px;
+  background-color: #EFBFA8;
+  font-size: 12pt;
+}
+
+#references{
+  text-align: justify;
+  padding: 10px;
+  background-color: #E2BBFF;
+  font-size: 12pt;
+}
